@@ -1,0 +1,12 @@
+﻿<div class="col-md-10 col-md-offset-3">
+    <h1>Hi {{currentUser.fullName}}!</h1>
+    <p>You're logged into Janaagrah portal!</p>
+    <h3>User Information</h3>
+    <ul>
+        <li>Name: {{currentUser.fullName}}</li>
+        <li>Email: {{currentUser.email}}</li>
+        <li>Password: ************</li>
+    </ul>
+    <p><a [routerLink]="['/edit']">Edit Account</a></p>
+    <p><a [routerLink]="['/login']">Logout</a></p>
+</div>
